@@ -1,0 +1,47 @@
+body {
+  background-color: #f4f6f9;
+}
+
+.carousel-image {
+  height: 420px;
+  object-fit: cover;
+  filter: brightness(0.62);
+}
+
+.carousel-caption {
+  bottom: 25%;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.75);
+}
+
+.categories-card {
+  top: 1rem;
+}
+
+.product-card {
+  border: 0;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.product-image {
+  height: 210px;
+  object-fit: cover;
+}
+
+@media (max-width: 575.98px) {
+  .carousel-image {
+    height: 280px;
+  }
+
+  .carousel-caption {
+    bottom: 12%;
+  }
+
+  .carousel-caption p {
+    display: none;
+  }
+}
